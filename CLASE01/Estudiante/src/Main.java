@@ -1,9 +1,7 @@
-package CLASE01.Ejercicio1;
-
 import java.util.List;
 import java.util.ArrayList;
 
-public class App {
+public class Main {
     public static void main(String[] args) {
         // Lista de Estudiantes
         List<Estudiante> estudiantes = new ArrayList<>();

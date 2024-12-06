@@ -1,5 +1,3 @@
-package CLASE01.Estudiante;
-
 public class Estudiante {
     // Definir atributos
     String nombre;
