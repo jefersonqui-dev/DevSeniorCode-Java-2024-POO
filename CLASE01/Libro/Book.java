@@ -1,4 +1,4 @@
-package CLASE01;
+package CLASE01.Libro;
 
 public class Book {
     // Definir atributos:
