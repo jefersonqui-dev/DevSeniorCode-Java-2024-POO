@@ -1,11 +1,11 @@
-public class Estudiante {
+public class Student {
     // Definir atributos
     String nombre;
     int edad;
     double promedio;
 
     // Constructor
-    public Estudiante(String nombre, int edad, double promedio) {
+    public Student(String nombre, int edad, double promedio) {
         this.nombre = nombre;
         this.edad = edad;
         this.promedio = promedio;
