@@ -18,5 +18,7 @@ public class PruebaEmployee {
         System.out.println(empleado2.hashCode());
 
         System.out.println(empleado1.equals(empleado2));
+
+        System.out.println(gerente1.toString());
     }
 }
