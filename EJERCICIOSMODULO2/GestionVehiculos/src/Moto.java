@@ -16,9 +16,7 @@ public class Moto extends Vehicle {
 
     @Override
     public String toString() {
-
         return super.toString() + "[¿Tiene Sidecar? = " + tieneSidecar + ", Tipo = Moto]";
 
     }
-
 }
