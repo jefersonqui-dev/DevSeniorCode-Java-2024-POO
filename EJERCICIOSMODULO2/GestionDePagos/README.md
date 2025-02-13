@@ -1,18 +1,28 @@
-## Getting Started
+# Gestion De Pagos
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este programa implementa un sistema extensible que gestiona multiples metodos de pago mediante el uso de una interfaz en java. El sistema soporta diferentes caracteristicas para cada método de pago, como validadcion de montos, procesamiento de pagos y la obtencion de detalles especificos.
 
-## Folder Structure
+## Implementación
 
-The workspace contains two folders by default, where:
+1. Interfaz Metodo Pago
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+```
+    void procesarPago(double monto); // Procesa un pago  y proporciona informacion de como se realiza
+    String obtenerDetalles(); // Devuelve detalles especificos del metodo de pago
+    boolean validarMonto(double monto);  // Valida si un monto es aceptable  segun las reglas del metodo de pago
+```
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+2. Clases que Implementan la interfaz
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+```
+    TarjetaCredito();
+    TransferenciaBancaria();
+    Bitcoin();
+    TarjetaRegalo();
+```
 
-## Dependency Management
+3. Clase Principal Main
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+   - Simula el uso del sistema, creando una lista de diferentes métodos de pago y procesando pagos con cada uno de ellos.
+   - Valida montos antes de procesar un pago.
+   - Imprime los detalles de cada metodo y el resultado de los pagos.
