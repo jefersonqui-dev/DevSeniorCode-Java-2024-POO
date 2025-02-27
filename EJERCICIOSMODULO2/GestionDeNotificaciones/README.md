@@ -1,18 +1,13 @@
-## Getting Started
+## Gestion de Notificaciones (Patron Factory)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+En este proyecto se hace uso e implementacion del patro de Diseño Factory para la gestion de Notificaciones
 
-## Folder Structure
+# Objetivo
 
-The workspace contains two folders by default, where:
+1. Crea implementaciones Concretas:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+   - CorreoNotificacion: Imprime "Enviando correo: [Mensaje]".
+   - SMS Notificacion: Imprime "Enviando SMS: [Mensaje]".
+   - PushNotificacion: Imprime "Enviando notificacion Push: [Mensaje]".
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+2. Implementa una clase Factory NotificacionFactory que devuelva el canal adecuado según un parámetro.
