@@ -1,3 +1,5 @@
+package Singleton.src;
+
 public class Logger {
 
     private static Logger instancia;
